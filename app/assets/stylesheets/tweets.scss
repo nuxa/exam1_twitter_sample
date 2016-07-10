@@ -1,0 +1,130 @@
+// Place all the styles related to the tweets controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+header {
+  width: 100%;
+  background-color: white;
+  text-align: center;
+}
+
+.navbar {
+	background-color: white;
+	color: white;
+	margin-bottom: 0px;
+}
+
+body {
+  /* Margin bottom by footer height */
+  background-color: #f5f8fa;
+  margin-top: 75px;
+}
+
+footer {
+  width: 100%;
+  background-color: #2c3e50;
+  padding: 20px 0;
+  color: white;
+  margin: auto;
+  padding-bottom: 10px;
+  font-size: 12px;
+	text-align: center;
+}
+
+.tweet {
+	display: block;
+	position: relative;
+	padding: 9px 12px;
+	background-color: white;
+	border-bottom: 1px solid #e1eBed;
+	word-wrap: break-word;
+	.avator {
+		display: block;
+		float: left;
+		margin: 3px 3px;
+		width: 48px;
+		height: 48px;
+		img {
+			display: block;
+			margin: 0 auto;
+			width: 100%;
+			border-radius: 6px;
+		}
+	}
+	.stream-item-header {
+		display: block;
+		height: 19px;
+		margin-left: 58px;
+		margin-right: 0;
+		margin-bottom: 3px;
+		span {
+			font-size: 13px;
+			color: #8899a6;
+		}
+	}
+	.tweet-content p {
+		display: block;
+		background-clip: padding-box;
+		margin-left: 58px;
+		margin-right: 8px;
+		font-size: 16px;
+		font-weight: 400;
+		width: auto;
+	}
+	.stream-item-footer {
+		display: block;
+		margin-left: 58px;
+		margin-bottom: 2px;
+		margin-top: 10px;
+		.btn .btn-info .btn-danger .btn-sm {
+			display: block;
+			text-align: center;
+		}
+	}
+}
+
+.timeline {
+	margin-top: 10px;
+	position: relative;
+	border-top: 1px solid #e1eBed;
+	border-bottom: 1px solid #e1eBed;
+	border-left: 1px solid #e1eBed;
+	border-right: 1px solid #e1eBed;
+	border-radius: 6px;
+	line-height: 16px;
+}
+
+.wrapper {
+	margin: 5px;
+}
+
+.dashboard {
+	display: block;
+	position: relative;
+	padding: 9px 12px;
+	background-color: white;
+	border: 1px solid #e1eBed;
+	border-radius: 6px;
+	height: 150px;
+	.main-avator {
+		display: block;
+		float: left;
+		margin-top: 30px;
+		width: 72px;
+		height: 72px;
+		img {
+			display: block;
+			margin: 0 auto;
+			width: 100%;
+			border-radius: 6px;
+		}
+	}
+	h3 {
+		text-align: center;
+	}
+}

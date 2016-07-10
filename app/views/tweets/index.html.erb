@@ -1,0 +1,35 @@
+<div class="container">
+    <div class="wrapper col-sm-3">
+        <div class="row">
+            <div class="dashboard">
+                <div class="main-avator">
+                    <img src="<%= asset_path "avator.jpg" %>">
+                </div>
+                <h3>ツイート一覧</h3>
+            </div>
+        </div>
+    </div>
+    <div class="wrapper col-md-6">
+        <div class="row">
+            <%= render 'form' %>
+        </div>
+        <div class="row timeline">
+                <% @tweets.each do |tweet| %>
+                    <div class="tweet">
+                        <div class="avator">
+                            <img src="<%= asset_path "avator.jpg" %>">
+                        </div>
+                        <div class="stream-item-header">
+                            いぬ<span>@hoge_hoge・<%= tweet.created_at.to_s(:human) %></span>
+                        </div>
+                        <div class="tweet-content">
+                            <p><%= tweet.content %></p>
+                        </div>
+                        <div class="stream-item-footer">
+                            <%= link_to '編集', edit_tweet_path(tweet.id), class: 'btn btn-info btn-sm col-sm-offset-8' %> <%= link_to '削除', tweet_path(tweet.id), method: :delete, data: { confirm: '削除してよろしいですか？' }, class: 'btn btn-danger btn-sm col-sm-offset-1'  %>
+                        </div>
+                    </div>
+                <% end %>
+        </div>
+    </div>
+</div>
